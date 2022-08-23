@@ -32,9 +32,10 @@ const (
     completions: 1
     template:
       spec:
+        automountServiceAccountToken: false
         containers:
         - name:  web-tty
-          image: ghcr.io/cloudtty/cloudshell:v0.2.0
+          image: ghcr.io/cloudtty/cloudshell:v0.3.0
           imagePullPolicy: IfNotPresent
           ports:
           - containerPort: 7681
